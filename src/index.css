@@ -1,1 +1,30 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Sora", Verdana, Geneva, Tahoma, sans-serif;
+}
+/* 
+.sideBar li {
+  @apply flex gap-2 items-center justify-between;
+} */
+
+.menuHoveState {
+  @apply px-5 hover:bg-hoverBG py-3 flex gap-2 items-center justify-between;
+}
+.active {
+  @apply px-5 bg-hoverBG  py-3 flex gap-2 items-center justify-between;
+}
+.iconStateColor {
+  @apply group-[aria-current=page]:text-brandColor-2 group-hover:text-brandColor-2;
+}
+.paragraphText {
+  @apply group-[aria-current=page]:text-text-color group-hover:text-text-color;
+}
+
+.iconText {
+  @apply flex gap-2 items-center text-active-color text-base;
+}

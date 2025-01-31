@@ -1,10 +1,15 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Dashboard from "./views/Dashboard";
+import Transactions from "./views/Transactions";
+
 function App() {
   return (
-    <>
-      <div>
-        <h1 className="text-2xl font-bold">Hello</h1>
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/transaction" element={<Transactions />} />
+      </Routes>
+    </Router>
   );
 }
 

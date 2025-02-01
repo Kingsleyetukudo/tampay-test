@@ -1,11 +1,14 @@
-import { Bell } from "lucide-react";
+import { Bell, Menu } from "lucide-react";
+import { usePageTitle } from "./PageTitleContext";
 const TopNav = () => {
+  const { pageTitle } = usePageTitle();
   return (
     <>
-      <div className="flex items-center justify-between py-6 px-14">
-        <div>
-          <h1 className="text-xl tracking-[0.5em] uppercase font-bold">
-            Dashboard
+      <div className="flex  items-center justify-between py-6 px-6 md:px-14 shadow-md">
+        <div className="flex gap-5 items-center">
+          <Menu />
+          <h1 className=" text-lg md:text-xl tracking-[0.2em] md:tracking-[0.5em] font-normal uppercase">
+            {pageTitle}
           </h1>
         </div>
         <div className="bg-brandColor-1 w-9 h-9 p-2 rounded-full flex items-center justify-center  relative">

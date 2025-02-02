@@ -2,6 +2,10 @@
   "version": 2,
   "builds": [
     {
+      "src": "pages/**/*.{js,jsx}",
+      "use": "@vercel/next"
+    },
+    {
       "src": "api/**/*.js",
       "use": "@vercel/node"
     }

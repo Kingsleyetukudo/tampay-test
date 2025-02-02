@@ -21,10 +21,10 @@ body {
   @apply px-5 bg-hoverBG  py-3 flex gap-2 items-center justify-between;
 }
 .iconStateColor {
-  @apply group-[aria-current=page]:text-brandColor-2 group-hover:text-brandColor-2;
+  @apply group-[aria-current-page]:text-brandColor-2 group-hover:text-brandColor-2;
 }
 .paragraphText {
-  @apply group-[aria-current=page]:text-text-color group-hover:text-text-color;
+  @apply group-[aria-current-page]:text-text-color group-hover:text-text-color;
 }
 
 .iconText {

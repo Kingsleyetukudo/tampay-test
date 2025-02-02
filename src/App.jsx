@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />}>
             <Route index element={<DashboardDefault />} />
-            <Route path="/transaction" element={<Transactions />} />
+            <Route path="transaction" element={<Transactions />} />
           </Route>
         </Routes>
       </Router>

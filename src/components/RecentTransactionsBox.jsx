@@ -2,7 +2,7 @@ import { ChevronRight, MoveUp, MoveDown } from "lucide-react";
 const RecentTransactions = () => {
   return (
     <>
-      <div className="w-[544px] flex flex-col gap-3 ">
+      <div className=" flex flex-col gap-3 ">
         <div className="flex items-center justify-between">
           <p className="text-brandColor-1 text-lg font-semibold">
             Recent Transactions
@@ -13,7 +13,7 @@ const RecentTransactions = () => {
           </span>
         </div>
         <div className="bg-white shadow-sm py-6 px-5 rounded-3xl grid grid-cols-1 gap-6">
-          <div className="flex  items-center justify-between gap-10">
+          <div className="flex  items-center justify-between gap-5 md:gap-10">
             <div className="flex items-center gap-5">
               <MoveUp className="bg-[#FBEAE9] text-[#D42620] rounded-full w-[40px] h-[40px] p-2.5" />
               <div className="flex flex-col gap-1">
@@ -26,10 +26,12 @@ const RecentTransactions = () => {
                 </p>
               </div>
             </div>
-            <p className="text-sm font-semibold">-&#8358;94,200.00</p>
+            <p className=" text-xs md:text-sm font-semibold">
+              -&#8358;94,200.00
+            </p>
           </div>
 
-          <div className="flex  items-center justify-between gap-10">
+          <div className="flex  items-center justify-between gap-5 md:gap-10">
             <div className="flex items-center gap-5">
               <MoveUp className="bg-[#FBEAE9] text-[#D42620] rounded-full w-[40px] h-[40px] p-2.5" />
               <div className="flex flex-col gap-1">
@@ -40,10 +42,10 @@ const RecentTransactions = () => {
                 </p> */}
               </div>
             </div>
-            <p className="text-sm font-semibold">-$11,000.00</p>
+            <p className="text-xs md:text-sm font-semibold">-$11,000.00</p>
           </div>
 
-          <div className="flex  items-center justify-between gap-10">
+          <div className="flex  items-center justify-between gap-5 md:gap-10">
             <div className="flex items-center gap-5">
               <MoveDown className="bg-[#E7F6EC] text-[#0F973D] rounded-full w-[40px] h-[40px] p-2.5" />
               <div className="flex flex-col gap-1">
@@ -56,10 +58,10 @@ const RecentTransactions = () => {
                 </p>
               </div>
             </div>
-            <p className="text-sm font-semibold">-&#8358;94,200.00</p>
+            <p className="text-xs md:text-sm font-semibold">&#8358;94,200.00</p>
           </div>
 
-          <div className="flex  items-center justify-between gap-10">
+          <div className="flex  items-center justify-between gap-5 md:gap-10">
             <div className="flex items-center gap-5">
               <MoveDown className="bg-[#E7F6EC] text-[#0F973D] rounded-full w-[40px] h-[40px] p-2.5" />
               <div className="flex flex-col gap-1">
@@ -72,7 +74,7 @@ const RecentTransactions = () => {
                 </p>
               </div>
             </div>
-            <p className="text-sm font-semibold">-&#8358;94,200.00</p>
+            <p className="text-xs md:text-sm font-semibold">&#8358;94,200.00</p>
           </div>
         </div>
       </div>

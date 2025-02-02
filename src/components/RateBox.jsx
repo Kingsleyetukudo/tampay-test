@@ -3,7 +3,7 @@ import countryIcon from "../assets/images/Country.png";
 const RateExchange = () => {
   return (
     <>
-      <div className="w-[544px] flex flex-col gap-3 ">
+      <div className="flex flex-col gap-3 ">
         <div className="flex items-center justify-between">
           <span className="flex items-center gap-2">
             <Zap className="text-brandColor-3" />

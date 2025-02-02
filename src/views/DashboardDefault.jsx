@@ -14,22 +14,26 @@ const DashboardDefault = () => {
   }, []);
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-8">
         <section>
           <AccountDetailsBox />
         </section>
-        <section>
-          <RecentTransactions />
-        </section>
-        <section>
-          <AdminDisplay />
-        </section>
-        <section>
-          <RateExchange />
-        </section>
-        <section>
-          <TransactionVolume />
-        </section>
+        <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_450px] justify-between gap-8 ">
+          <section>
+            <TransactionVolume />
+          </section>
+          <section>
+            <RecentTransactions />
+          </section>
+        </div>
+        <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_450px] justify-between gap-8 ">
+          <section>
+            <AdminDisplay />
+          </section>
+          <section>
+            <RateExchange />
+          </section>
+        </div>
       </div>
     </>
   );

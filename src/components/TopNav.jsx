@@ -1,12 +1,12 @@
 import { Bell, Menu } from "lucide-react";
 import { usePageTitle } from "./PageTitleContext";
 const TopNav = () => {
-  const { pageTitle } = usePageTitle();
+  const { pageTitle, toggleSidebar } = usePageTitle();
   return (
     <>
       <div className="flex  items-center justify-between py-6 px-6 md:px-14 shadow-md">
         <div className="flex gap-5 items-center">
-          <Menu />
+          <Menu onClick={toggleSidebar} />
           <h1 className=" text-lg md:text-xl tracking-[0.2em] md:tracking-[0.5em] font-normal uppercase">
             {pageTitle}
           </h1>

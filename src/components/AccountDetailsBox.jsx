@@ -1,11 +1,18 @@
+import { usePageTitle } from "./PageTitleContext";
+
 const AccountDetailsBox = () => {
+  const { isSidebarOpen } = usePageTitle();
   return (
     <>
       <div className="flex flex-col gap-3">
         <div>
           <h2 className="font-semibold text-lg">Account Metrics</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8">
+        <div
+          className={`grid md:grid-cols-4 gap-4 md:gap-8 ${
+            isSidebarOpen ? "grid-cols-1" : "grid-cols-2"
+          }`}
+        >
           <div className="account-box ">
             <p className="text-text-color text-xs">Volume Transacted Today</p>
             <p className="text-brandColor-2 font-bold text-2xl md:text-4xl">

@@ -39,7 +39,7 @@ const SideBar = () => {
 
             <li className="group">
               <NavLink
-                to="/transaction"
+                to="/transactions"
                 className={({ isActive }) =>
                   isActive ? "active" : "menuHoveState"
                 }

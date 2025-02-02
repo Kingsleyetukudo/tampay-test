@@ -2,18 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "pages/**/*.{js,jsx}",
-      "use": "@vercel/next"
+      "src": "index.html",
+      "use": "@vercel/static"
     },
     {
-      "src": "api/**/*.js",
+      "src": "vite.config.js",
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
